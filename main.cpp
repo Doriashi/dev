@@ -1,15 +1,16 @@
-#include <iostream> // базова€ директива - вывод в консоль
-using namespace std; // чтобы не прописывать каждый раз "std::" -> в больших программах не пишут)
-#include "foo.h"
+#include <iostream>
+#include "List.h"
 
-// скобками {} выдел€ютс€ области видимости
+using namespace std;
 
-void foo_0(int a); // объ€вление функции
-void foo_0(int a) { // реализаци€ функции
-    cout << a * a;
-}
 
 int main()
 {
-    foo();
+    List l = {};
+    
+    l.push_back(4);
+
+    l.print();
+
+
 }
