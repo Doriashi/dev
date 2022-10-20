@@ -7,8 +7,8 @@ struct Node {
 };
 
 struct List {
-	Node* first;
-	Node* last;
+	Node* first = nullptr;
+	Node* last = nullptr;
 
 
 	void insert(int position, int value);
