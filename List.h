@@ -10,7 +10,6 @@ struct List {
 	Node* first = nullptr;
 	Node* last = nullptr;
 
-
 	void insert(int position, int value);
 	void print();
 	void clear();
