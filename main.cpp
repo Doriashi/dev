@@ -53,9 +53,6 @@ int main()
 	l.print();
 	std::cout << "Give the value of element in 1 position in list 1 - operator[](1): " << l.operator[](1) << std::endl;
 
-	
-
-
 
 	std::cout << std::endl << "Add last element in empty list - push_back(16): " << std::endl;
 	l1.push_back(16);
@@ -72,6 +69,4 @@ int main()
 	std::cout << "Clear this list..." << std::endl;
 	l1.clear();
 	std::cout << "Is this list empty? " << l1.is_empty() << std::endl;
-
-
 }
