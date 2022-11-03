@@ -1,14 +1,14 @@
 #include "String.h"
 
 String::String(const char* str) {
-	std::cout << "Конструктор:" << this << std::endl;
+	std::cout << "Constructor:" << this << std::endl;
 	size = strlen(str);
 	this->str = new char[size + 1];
 	strcpy(this->str, str);
 }
 
 String::String(size_t n, char c) {
-	std::cout << "Конструктор:" << this << std::endl;
+	std::cout << "Constructor:" << this << std::endl;
 	str = new char[n + 1];
 	for (int i = 0; i < n; i++) str[i] = c;
 	str[n] = '\0';
@@ -16,12 +16,12 @@ String::String(size_t n, char c) {
 }
 
 String::~String() {
-	std::cout << "Деструктор:" << this << std::endl;
+	std::cout << "Destructor:" << this << std::endl;
 	delete[] str;
 }
 
 String::String(const String& other) {
-	std::cout << "Конструктор:" << this << std::endl;
+	std::cout << "Constructor:" << this << std::endl;
 	this->size = other.size;
 	this->str = new char[other.size + 1];
 	for (int i = 0; i < other.size; i++) this->str[i] = other.str[i];
